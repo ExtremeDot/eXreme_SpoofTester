@@ -1,12 +1,13 @@
 [package]
 name = "extreme_spoof_test"
-version = "1.1.0"
+version = "1.0.0"
 edition = "2021"
 
 [dependencies]
-clap = { version = "4.4", features = ["derive"] }
+pnet = "0.34.0" # Baraye karkard ba raw sockets va interfaceha
 serde = { version = "1.0", features = ["derive"] }
-toml = "0.8"
-pnet = "0.34"
-ipnetwork = "0.20"
-chrono = "0.4"
+serde_json = "1.0"
+ipnetwork = "0.20.0" # Baraye pakhsh kardan range CIDR
+colored = "2.1.0" # Baraye khoroji haye rangi
+chrono = "0.4" # Baraye timestamp fail khoroji
+clap = { version = "4.4", features = ["derive"] } # Baraye argument parser
